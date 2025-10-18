@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Detail Produk | PSDH Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style_efas.css" />
+    <link rel="stylesheet" href="style_ireng.css" />
+    <style>
+      .custom-header {
+        background: #dc3545;
+        border-bottom: 2px solid #dc3545;
+      }
+      .custom-footer {
+        background: #dc3545;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="custom-header d-flex justify-content-between align-items-center px-4 py-3"
+    >
+      <img src="foto/logo_pochi.png" alt="Logo" />
+      <h1 class="fw-bold text-danger m-0">PSDH Store</h1>
+      <nav>
+        <a href="home.html" class="mx-2 text-decoration-none text-white"
+          >Home</a
+        >
+        <a href="produk.html" class="mx-2 text-decoration-none text-dark"
+          >Produk</a
+        >
+        <a href="kontak.html" class="mx-2 text-decoration-none text-white"
+          >Kontak</a
+        >
+        <a
+          href="hunter-registration.html"
+          class="mx-2 text-decoration-none text-white"
+          >Daftar Hunter</a
+        >
+        <button id="themeToggle" class="btn btn-sm btn-outline-danger ms-3">
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main class="container py-5">
+      <div id="product-detail" class="text-center text-muted">
+        Memuat detail produk...
+      </div>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer-section text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="foto/logo_pochi.png"
+                alt="Logo"
+                style="height: 50px; width: auto; margin-right: 15px"
+              />
+              <h5 class="mb-0 fw-bold">PSDH Store</h5>
+            </div>
+            <p class="mb-3">
+              Toko resmi Public Safety Devil Hunters. Menyediakan peralatan,
+              senjata, dan layanan kontrak iblis untuk para pemburu profesional.
+            </p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/so_b_run_?igsh=bG12M3FtcnNlMTgy" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@SabunGrg" title="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://discord.com/users/715840202068721694" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Menu Utama</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="home.html">Beranda</a></li>
+              <li class="mb-2"><a href="produk.html">Produk & Jasa</a></li>
+              <li class="mb-2"><a href="kontak.html">Kontak</a></li>
+              <li class="mb-2">
+                <a href="hunter-registration.html">Daftar Hunter</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Product Categories -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kategori</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#weapons">Senjata</a></li>
+              <li class="mb-2"><a href="#devils">Kontrak Iblis</a></li>
+              <li class="mb-2"><a href="#organs">Organ Manusia</a></li>
+              <li class="mb-2"><a href="#equipment">Perlengkapan</a></li>
+            </ul>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Layanan</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#faq">FAQ</a></li>
+              <li class="mb-2"><a href="#support">Bantuan</a></li>
+              <li class="mb-2"><a href="#shipping">Pengiriman</a></li>
+              <li class="mb-2"><a href="#returns">Pengembalian</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kontak</h6>
+            <div class="footer-links">
+              <p class="mb-2">
+                <i class="fas fa-phone me-2"></i> +62 877-2024-0775
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <a
+                  href="#"
+                  class="__cf_email__"
+                  data-cfemail="cba2a5ada48bbbb8afa3e5aca4bde5a2af"
+                  >[@obunsabun]</a
+                >
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Surabaya, Eropa 🐈
+              </p>
+              <p class="mb-0">
+                <i class="fas fa-clock me-2"></i> 24/7 Emergency
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="blood-divider" />
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">
+              © 2025 PSDH RI | Iblis akan terus lahir dan lahir
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+              <span class="hunter-badge">🔥 Devil Hunter Certified</span>
+              <span class="hunter-badge">⚔️ Official Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      /*Data Produk*/
+      const PRODUCTS = {
+        desert_eagle: {
+          title: "Desert Eagle",
+          price: "Rp 7.950.000",
+          img: "foto/d_eagle.jpg",
+          desc: `
+        <p>Desert Eagle adalah pistol semi-otomatis kaliber besar yang sangat ikonik, dikenal karena ukurannya yang besar dan daya tembaknya yang luar biasa. Pistol ini sering digambarkan sebagai <strong>"hand cannon"</strong> (meriam tangan) dan memiliki tempat khusus baik di kalangan penggemar senjata api maupun di budaya populer.
+        <p><strong>Karakteristik Utama : </strong>
+        <ul>
+          <li><strong>Ukuran dan berat</strong> Desert Eagle jauh lebih besar dan lebih berat daripada pistol semi-otomatis standar. Beratnya bisa mencapai sekitar 2 kg (untuk Mark XIX kaliber .50 AE), yang membantu meredam sentakan (recoil) yang sangat kuat.
+          <li><strong>Kaliber besar</strong> Pistol ini dirancang untuk menembakkan peluru berdaya tinggi (high-power cartridges), yang umum digunakan pada senapan.
+        </ul>
+        <p><strong>Mekanisme Operasi yang Unik : </strong>
+        <p>Salah satu ciri khas Desert Eagle yang paling membedakannya adalah mekanisme operasinya.
+        <ul>
+          <li><strong>Sistem Gas-Operated (Dioperasikan Gas):</strong> Berbeda dari kebanyakan pistol semi-otomatis yang menggunakan mekanisme blowback atau short-recoil, Desert Eagle menggunakan sistem gas langsung (gas-operated), mirip dengan senapan serbu.
+          <li><strong>Kunci Berputar (Rotating Bolt):</strong> Desert Eagle menggunakan kunci (bolt) yang berputar untuk mengunci laras saat ditembakkan, mirip dengan senapan, menambah kekuatan dan keandalan sistem.
+          <li><strong>Aksi Tunggal (Single-Action):</strong> Pistol ini memiliki mekanisme penembakan aksi tunggal, yang berarti kokang (hammer) harus ditarik ke belakang (secara manual atau otomatis oleh gerakan slide) sebelum setiap tembakan dapat dilepaskan dengan tarikan pelatuk yang ringan.
+          </ul>`,
+          gallery: [
+            "foto/de_1.jpg",
+            "foto/de_2.jpg",
+            "foto/de_3.jpg",
+            "foto/de_4.jpg",
+          ],
+        },
+        shotgun: {
+          title: "Izmash Saiga 12K 12gauge semi-automatic shotgun",
+          price: "Rp 9.289.841",
+          img: "foto/shotgun_2.jpg",
+          desc: `
+        <p>Saiga-12K adalah shotgun semi-otomatis 12-gauge buatan Rusia, mengadopsi mekanisme mirip AK untuk keandalan tinggi. Varian K (karabin) punya laras lebih pendek dan stok kompak, mendukung magazin kotak atau drum sehingga cocok untuk tugas jarak dekat, olahraga menembak, atau penegakan dengan pengaturan hukum yang ketat.
+        <p><strong>Spesifikasi : </strong>
+        <ul>
+          <li><strong>Tipe:</strong> Semi-otomatis
+          <li><strong>Kaliber: </strong> 12 gauge
+          <li><strong>Mekanisme: </strong> Gas-operated, turunan desain Kalashnikov
+          <li><strong>Panjang (±): </strong> ~910 mm (variasi stok)
+          <li><strong>Panjang laras (±): </strong> ~430 mm
+          <li><strong>Berat (±): </strong> 3.5–3.9 kg
+          <li><strong>Kapasitas: </strong> Magizin kotak (5–10+) atau drum (20–30)
+        </ul>`,
+          gallery: [
+            "foto/shotgun.jpg",
+            "foto/shotgun_1.jpg",
+            "foto/shotgun_3.jpg",
+            "foto/shotgun_4.jpg",
+          ],
+        },
+        kriss: {
+          title: "KRISS Vector, DDSB",
+          price: "Rp 14.500.000",
+          img: "foto/kriss.jpg",
+          desc: `
+        <p>KRISS Vector adalah senapan submachine / PDW modern yang mengadopsi mekanisme unik Super V untuk mengalihkan energi recoil ke bawah sehingga mengurangi hentakan dan muzzle climb — membuat tembakan cepat lebih mudah dikendalikan. Varian tersedia untuk kaliber seperti 9×19mm, .45 ACP, dan lainnya; tersedia versi sipil semi-otomatis serta varian militer/polisi full-auto.
+        <p><strong>Spesifikasi : </strong>
+        <ul>
+          <li><strong>Tipe:</strong> Submachine gun / PDW (varian sipil: semi-otomatis).
+          <li><strong>Kaliber: </strong> 9×19mm Parabellum, .45 ACP (tergantung varian); ada juga konversi/varian lain.
+          <li><strong>Mekanisme: </strong> Kriss Super V (delayed blowback / downward bolt travel) — mengurangi recoil dan muzzle rise.
+          <li><strong>Panjang laras (keseluruhan)(±): </strong> bervariasi menurut model (contoh: CRB 16" / varian SMG lebih pendek).
+          <li><strong>Berat (±): </strong> ≈ 7.0 lb (≈ 3.1 kg) untuk varian 5.5" (ada juga varian 6.5" ~7.5 lb).
+          <li><strong>Kapasitas: </strong> tergantung kaliber & magazine (sering menggunakan magasin standar Glock untuk varian 9mm/.45 atau magasin khusus; kapasitas populer: 10–30+).
+          <li><strong>Kegunaan: </strong> CQB / PDW / penegakan & penggunaan sipil (sport/tactical) — modular dan ergonomis untuk aksesori.
+        </ul>`,
+          gallery: [
+            "foto/kriss_1.jpg",
+            "foto/kriss_2.jpg",
+            "foto/kriss_3.jpg",
+            "foto/kriss_4.jpg",
+          ],
+        },
+        aki_sword: {
+          title: "Aki Sword",
+          price: "Rp masa hidupmu / pemakaian",
+          img: "foto/aki_sword.jpg",
+          desc: `
+        <p>Katana panjang dengan bilah yang ramping. Bilah yang digunakan untuk mengaktifkan kutukan sering kali disebut sebagai <strong>"Pedang Paku"</strong> (Nail Sword).
+        <p><strong>Cara kerja (mekanisme kutukan):</strong>
+        <ul>
+            <li> Ritual Tusukan (Tiga Kali): Seseorang harus menusuk atau melukai targetnya dengan pedang (Nail Sword) sebanyak tiga kali.
+            <li> Panggilan Kutukan: Setiap tusukan dihitung, dan suara Iblis Kutukan akan terdengar (menghitung mundur: "3... 2... 1...").
+            <li> Eksekusi Instan: Pada hitungan ke-nol (setelah tusukan ketiga), Iblis Kutukan (Curse Devil) akan memanifestasikan sebagian tubuhnya—biasanya berupa tangan kerangka raksasa—dan menghancurkan tubuh musuh secara instan, menyebabkan kematian.
+            <li> Sifat Serangan: Ini adalah serangan yang sangat kuat dan efektif, mampu membunuh iblis yang sangat tangguh dalam satu serangan ritual.
+        </ul>
+        <p><strong>Harga (konsekuensi kontrak): </strong>Tidak seperti senjata biasa, harga yang dibayar untuk kekuatan pedang ini adalah umur penggunanya.
+        <p><strong>Keterbatasan :</strong>
+        <ul>
+            <li> Syarat Tusukan: Ritual kutukan hanya akan berhasil jika berhasil menusuk target sebanyak tiga kali. Jika target terlalu cepat, mampu beregenerasi dengan cepat (seperti Fiend atau Hybrid), atau lolos sebelum hitungan mencapai nol, serangan akan gagal.
+            <li> Efek Terbatas pada Hybrid: Kekuatan Kutukan bisa sangat kuat, namun ia tidak dapat membunuh Hybrid (seperti Katana Man) secara permanen, karena Hybrid dapat dihidupkan kembali selama jantung Iblis mereka utuh.
+        </ul>`,
+          gallery: [
+            "foto/aki_angel.jpg",
+            "foto/aki_nebas.jpg",
+            "foto/aki_pose.jpg",
+            "foto/cursed_katanaman.jpg",
+          ],
+        },
+        jantung_man: {
+          title: "Jantung Manusia",
+          price: "Rp 2.000.000.000",
+          img: "foto/jantung.jpg",
+          desc: `
+        <p>Apabila hendak digunakan untuk <strong>transplantasi</strong>, ada beberapa hal yang perlu diperhatikan :
+        <ul>
+          <li> <strong>Kecocokan Golongan Darah (ABO)</strong>
+          <li> <strong>Ukuran jantung</strong>
+          <li> <strong>Kondisi fisik cukup sehat</strong> Cukup sehat untuk menjalani operasi besar dan perawatan pasca-transplantasi. Usia seringkali menjadi pertimbangan (sebagian besar di bawah 65 tahun), meskipun yang terpenting adalah kesehatan secara keseluruhan.
+          <li> <strong>Tidak merokok/narkoba</strong> wajib berhenti merokok dan tidak menggunakan narkoba
+          <li> <strong>Surat Dokter</strong>`,
+          gallery: [
+            "foto/jantung_1.jpg",
+            "foto/jantung_2.jpg",
+            "foto/jantung_3.jpg",
+            "foto/jantung_4.jpg",
+          ],
+        },
+        ginjal_man: {
+          title: "Ginjal Manusia",
+          price: "Rp 3.000.000.000",
+          img: "foto/ginjal.jpg",
+          desc: `
+        <p>Apabila hendak digunakan untuk <strong>transplantasi</strong>, ada beberapa hal yang perlu diperhatikan :
+        <ul>
+          <li> <strong>Usia 18-60</strong>
+          <li> <strong>Tidak memiliki penyakit berat</strong> entah itu seperti organ yg sakit, kanker, atau virus.
+          <li> <strong>Tidak memiliki gangguan kejiwaan berat</strong>
+          <li> <strong>Cocok</strong> secara jaringan dan golongan darahnya
+          </ul>`,
+          gallery: [
+            "foto/ginjal_1.jpg",
+            "foto/ginjal_2.jpg",
+            "foto/ginjal_3.jpg",
+            "foto/ginjal_4.jpg",
+          ],
+        },
+        fox_devil: {
+          title: "Fox Devil",
+          price: "Rp Sebagian Kecil Tubuhmu/pemakaian",
+          img: "foto/fox_devil.jpg",
+          desc: `
+        <p>Fox Devil cenderung lebih mau bernegosiasi dan relatif "ramah" terhadap Pemburu Iblis Public Safety. 
+        <p><strong>Konsep :</strong> Iblis yang mewakili ketakutan terhadap rubah.
+        <p><strong>Syarat Kontrak Umum :</strong> 
+        <ul>
+          <li> <strong>Persembahan Tubuh :</strong> Sebagai imbalan standar, Fox Devil meminta penggunanya untuk mempersembahkan sebagian kecil tubuhnya saat memanggilnya (misalnya, menjulurkan tangan).
+          <li> <strong>Kecocokan/Kesukaan :</strong> Fox Devil sangat selektif dan mungkin menolak untuk dipanggil atau membantu jika ia merasa target Iblis yang dihadapi tidak menarik atau jika pengontraknya tidak disukainya.
+          </ul>
+        <p><strong>Imbalan dari kontrak :</strong> Pengontrak dapat memanggil bagian-bagian tubuh Fox Devil (seperti kepala dan cakar besar) untuk menelan atau menyerang Iblis musuh dengan perintah "Kon" (dari kata Kitsune).
+        <p>Dalam kasus yang terjadi pada Aki, ia <strong>mengorbankan sebagian kulit</strong> (biasanya kulit di area lengan bawah) untuk 1 kali pemanggilan`,
+          gallery: [
+            "foto/fox_2.jpg",
+            "foto/fox_1.jpg",
+            "foto/fox_3.jpg",
+            "foto/fox_4.jpg",
+          ],
+        },
+        future_devil: {
+          title: "Future Devil",
+          price: "Rp ???(Bergantung pada kesepakatan)",
+          img: "foto/future_devil_fr.jpg",
+          desc: `
+        <p><strong>Konsep :</strong> Iblis yang mewakili ketakutan terhadap masa depan dan ketidakpastian.
+        <p><strong>Wujud :</strong> Memiliki penampilan yang aneh, menyerupai pohon yang terbelah, dengan lubang besar di dada yang berisi satu mata. Sering berteriak "Masa depan adalah yang terbaik!"
+        <p><strong>Syarat Kontrak :</strong>
+        <ul>
+          <li> <strong>(tidak ada kepastian sebenarnya)</strong> kebanyakan harga yang diminta sangat tinggi, seperti separuh sisa umur hidup atau kedua mata dan indra perasa serta penciuman.
+          <li> <strong>Kontrak dengan Aki :</strong> "Menginap" di Tubuh: Future Devil membuat kontrak yang relatif murah dengan Aki, hanya dengan syarat diizinkan untuk tinggal di dalam mata kiri Aki.
+          <li> <strong>Alasan : </strong> Future Devil setuju dengan syarat yang ringan ini karena ia melihat masa depan Aki akan menjadi masa depan yang "paling mengerikan dan paling lucu" (dari sudut pandang Iblis), dan ia ingin memiliki tempat duduk terbaik untuk menyaksikan kehancuran tersebut.
+          </ul>
+        <p><strong>Imbalan dari kontrak :</strong> Pengontrak mendapatkan kemampuan precognition atau melihat beberapa detik ke masa depan. Hal ini memungkinkan penggunanya memprediksi serangan lawan dan meresponsnya.`,
+          gallery: [
+            "foto/future_2.jpg",
+            "foto/future_1.jpg",
+            "foto/future_3.jpg",
+            "foto/futuredevil.jpg",
+          ],
+        },
+        ghost_devil: {
+          title: "Ghost Devil",
+          price: "Rp 1 Bola Mata",
+          img: "foto/ghost_devil.jpg",
+          desc: `
+        <p><strong>Konsep :</strong> Iblis yang mewujudkan ketakutan manusia terhadap hantu.
+        <p><strong>Wujud :</strong> Berwujud besar, menyerupai wanita dengan banyak lengan. Yang paling khas adalah sifatnya tidak terlihat (atau setidaknya tidak dapat dilihat oleh orang yang merasa takut)
+        <p><strong>Syarat Kontrak</strong>
+        <p><strong>Untuk Memanggil Sebagian Kekuatan (Lengan): :</strong>
+        <ul>
+          <li> <strong>Pengorbanan : </strong> Mata kanan akan diambil oleh ghost devil.
+          <li> <strong>Imbalan :</strong> Dengan pengorbanan ini, Pengontrak mendapatkan kekuatan untuk memanggil dan mengendalikan lengan kanan Ghost Devil untuk menyerang atau memanipulasi target.
+        </ul>
+        <p><strong>Untuk Memanggil Kekuatan Penuh (Seluruh Tubuh) :</strong>
+        <ul>
+          <li> <strong>Pengorbanan : </strong> Seluruh Tubuh dan Nyawa pengguna.
+          <li> <strong>Imbalan :</strong> melepaskan kekuatan Iblis Hantu secara penuh. 
+        </ul>
+        `,
+          gallery: [
+            "foto/ghost_1.jpg",
+            "foto/ghost_2.jpg",
+            "foto/ghost_3.jpg",
+            "foto/ghost_4.jpg",
+          ],
+        },
+      };
+
+      /* ============
+       Ambil ID dari URL
+       ============ */
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+      const container = document.getElementById("product-detail");
+
+      /* ============
+       Render Produk
+       ============ */
+      if (!id || !PRODUCTS[id]) {
+        container.innerHTML = `
+        <div class="alert alert-warning">
+          Produk tidak ditemukan. 
+          <a href="produk.html" class="alert-link">Kembali ke daftar produk</a>.
+        </div>`;
+      } else {
+        const p = PRODUCTS[id];
+        container.innerHTML = `
+        <div class="row align-items-start justify-content-center g-4">
+          <div class="col-md-5">
+            <img src="${
+              p.img
+            }" class="img-fluid rounded shadow custom-border" alt="${p.title}">
+          </div>
+          <div class="col-md-6 text-start">
+            <h2 class="fw-bold mb-3">${p.title}</h2>
+            <h4 class="text-danger mb-3">${p.price}</h4>
+            <p class="mb-4">${p.desc}</p>
+
+            <!-- Tombol pembelian -->
+            <a href="https://wa.me/6287720240775?text=${encodeURIComponent(
+              "Woi, gw mau beli " + p.title
+            )}"
+               target="_blank" class="btn btn-success me-2">Beli via WhatsApp</a>
+
+            <a href="produk.html" class="btn btn-outline-secondary">← Kembali</a>
+          </div>
+        </div>`;
+        if (p.gallery && p.gallery.length > 0) {
+          const galleryHTML = `
+                <hr class="my-5">
+                <h4 class="fw-bold mb-4 text-center">Dokumentasi Produk</h4>
+                <div class="row g-3">
+                ${p.gallery
+                  .map(
+                    (img) => `
+                    <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card border rounded shadow-sm overflow-hidden">
+                        <img src="${img}" class="img-fluid gallery-img" alt="Dokumentasi ${p.title}">
+                    </div>
+                    </div>
+                `
+                  )
+                  .join("")}
+                </div>
+            `;
+          container.innerHTML += galleryHTML;
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

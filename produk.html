@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk | PSDH Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style_efas.css" />
+    <link rel="stylesheet" href="style_ireng.css" />
+  </head>
+  <body>
+    <header
+      class="custom-header d-flex justify-content-between align-items-center px-4 py-3"
+    >
+      <img src="foto/logo_pochi.png" alt="Logo" />
+      <h1 class="fw-bold text-danger">Devil Hunter Store</h1>
+      <nav>
+        <a href="home.html" class="mx-2 text-decoration-none text-white"
+          >Home</a
+        >
+        <a
+          href="produk.html"
+          class="mx-2 text-decoration-none fw-semibold text-dark"
+          >Produk</a
+        >
+        <a href="kontak.html" class="mx-2 text-decoration-none text-white"
+          >Kontak</a
+        >
+        <a
+          href="hunter-registration.html"
+          class="mx-2 text-decoration-none text-white"
+          >Daftar Hunter</a
+        >
+        <button id="themeToggle" class="btn btn-sm btn-outline-danger ms-3">
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-danger text-white py-4">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-2">⚔️ Arsenal Devil Hunter ⚔️</h2>
+        <p class="mb-0">
+          Peralatan dan layanan terbaik untuk para pemburu iblis profesional
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Categories Navigation -->
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <div class="btn-group" role="group">
+            <button
+              type="button"
+              class="btn btn-outline-danger active"
+              onclick="showCategory('weapons')"
+            >
+              <i class="fas fa-sword me-1"></i>Senjata
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              onclick="showCategory('devils')"
+            >
+              <i class="fas fa-fire me-1"></i>Kontrak Iblis
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              onclick="showCategory('organs')"
+            >
+              <i class="fas fa-heart me-1"></i>Organ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <!-- Weapons Section -->
+      <div id="weapons-section" class="category-section">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold devil-accent">
+            <i class="fas fa-crosshairs me-2"></i>Senjata & Peralatan
+          </h2>
+          <span class="hunter-badge">🔫 Weapons Division</span>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div
+              class="card shadow-sm h-100 product-card"
+              data-id="desert_eagle"
+            >
+              <div class="position-relative">
+                <img
+                  src="foto/d_eagle.jpg"
+                  class="card-img-top"
+                  alt="D eagle"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-success"
+                  >AVAILABLE</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Desert Eagle</h5>
+                <p class="card-text text-muted">Rp7.950.000</p>
+                <div class="mb-2">
+                  <span class="badge bg-secondary me-1">Firearm</span>
+                  <span class="badge bg-primary">.50 AE</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  pistol semi-otomatis kaliber besar bertenaga gas, yang
+                  terkenal karena ukurannya yang mengesankan dan daya hentaknya
+                  yang kuat. Dengan kaliber seperti .357 Magnum, .44 Magnum, dan
+                  .50 Action Express (AE).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="card shadow-sm h-100 product-card"
+              data-id="shotgun"
+            >
+              <div class="position-relative">
+                <img
+                  src="foto/shotgun_2.jpg"
+                  class="card-img-top"
+                  alt="shotgun"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-success"
+                  >AVAILABLE</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Izmash Saiga 12K 12gauge semi-automatic shotgun</h5>
+                <p class="card-text text-muted">Rp9.289.841</p>
+                <div class="mb-2">
+                  <span class="badge bg-secondary me-1">Firearm</span>
+                  <span class="badge bg-primary">.12-gauge</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  Saiga-12K adalah shotgun semi-otomatis 12-gauge buatan Rusia,
+                  mengadopsi mekanisme mirip AK untuk keandalan tinggi. 
+                  Varian K (karabin) punya laras lebih pendek dan stok kompak, mendukung magazin kotak atau drum sehingga cocok untuk tugas jarak dekat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="card shadow-sm h-100 product-card"
+              data-id="kriss"
+            >
+              <div class="position-relative">
+                <img
+                  src="foto/kriss.jpg"
+                  class="card-img-top"
+                  alt="kriss"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-success"
+                  >AVAILABLE</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">KRISS Vector, DDSB</h5>
+                <p class="card-text text-muted">Rp14.500.000</p>
+                <div class="mb-2">
+                  <span class="badge bg-secondary me-1">Firearm</span>
+                  <span class="badge bg-primary">.45 ACP</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  KRISS Vector adalah senapan submachine / PDW modern yang mengadopsi mekanisme unik Super V untuk mengalihkan energi recoil ke bawah 
+                  sehingga mengurangi hentakan dan muzzle climb — membuat tembakan cepat lebih mudah dikendalikan. 
+                  Varian tersedia untuk kaliber seperti 9×19mm, .45 ACP, dan lainnya.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 product-card" data-id="aki_sword">
+              <div class="position-relative">
+                <img
+                  src="foto/aki_sword.jpg"
+                  class="card-img-top"
+                  alt="Aki sword"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                  >LEGENDARY</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Aki Sword</h5>
+                <p class="card-text text-muted">Rp masa hidupmu/pemakaian</p>
+                <div class="mb-2">
+                  <span class="badge bg-warning text-dark me-1">Cursed</span>
+                  <span class="badge bg-info">Contract Required</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  Menggunakan pedang itu sama dengan melakukan kontrak dengan
+                  Cursed Devil. Setelah target tertusuk tiga kali, Iblis Kutukan
+                  akan muncul di belakang target dan menggigitnya. Penggunaan
+                  kekuatan ini mengorbankan sebagian usianya.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Devils Section -->
+      <div id="devils-section" class="category-section" style="display: none">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold devil-accent">
+            <i class="fas fa-fire me-2"></i>Kontrak Iblis
+          </h2>
+          <span class="hunter-badge">👹 Devils Division</span>
+        </div>
+        <p class="text-center mb-5 text-muted">
+          <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+          Keberhasilan kontrak bergantung pada dirimu sendiri. Risiko kematian
+          sangat tinggi.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 product-card" data-id="fox_devil">
+              <div class="position-relative">
+                <img
+                  src="foto/fox_devil.jpg"
+                  class="card-img-top"
+                  alt="Fox devil"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-success"
+                  >FRIENDLY</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Fox Devil</h5>
+                <p class="card-text text-muted">Rp bagian tubuh/pemakaian</p>
+                <div class="mb-2">
+                  <span class="badge bg-orange text-white me-1"
+                    >Animal Type</span
+                  >
+                  <span class="badge bg-success">Cooperative</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  Seseorang dapat menggunakan kekuatannya dalam pertempuran
+                  dengan mengangkat tangan dan mengucapkan kata "Kon",
+                  menyebabkan kepala Iblis Rubah tampak langsung menggigit tubuh
+                  target, menelannya utuh atau mencabik-cabiknya.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="card shadow-sm h-100 product-card"
+              data-id="future_devil"
+            >
+              <div class="position-relative">
+                <img
+                  src="foto/future_devil_fr.jpg"
+                  class="card-img-top"
+                  alt="future devil"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-info"
+                  >SPECIAL</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Future Devil</h5>
+                <p class="card-text text-muted">Rp???</p>
+                <div class="mb-2">
+                  <span class="badge bg-purple text-white me-1"
+                    >Premonition</span
+                  >
+                  <span class="badge bg-warning text-dark">Unpredictable</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  Iblis ini bisa memberikan penglihatan masa depan kepada orang
+                  yang berkontrak dengannya. Penglihatan yang diberikan Iblis
+                  Masa Depan bersifat absolut, artinya masa depan yang dilihat
+                  tidak dapat diubah, tetapi terkadang samar dan bisa
+                  disalahartikan
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="card shadow-sm h-100 product-card"
+              data-id="ghost_devil"
+            >
+              <div class="position-relative">
+                <img
+                  src="foto/ghost_devil.jpg"
+                  class="card-img-top"
+                  alt="Ghost devil"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                  >DANGEROUS</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ghost Devil</h5>
+                <p class="card-text text-muted">Rp Mata Kanan</p>
+                <div class="mb-2">
+                  <span class="badge bg-dark me-1">Supernatural</span>
+                  <span class="badge bg-danger">High Risk</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  Pengontrak bisa memanifestasikan lengan kanan Iblis Hantu dan
+                  membuatnya bergerak persis seperti yang dia lakukan dengan
+                  lengan kanannya sendiri.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organs Section -->
+      <div id="organs-section" class="category-section" style="display: none">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold devil-accent">
+            <i class="fas fa-heart me-2"></i>Organ Manusia
+          </h2>
+          <span class="hunter-badge">🫀 Organs Division</span>
+        </div>
+        <p class="text-center mb-5 text-muted">
+          <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+          Semua organ telah melalui pemeriksaan medis dan siap untuk digunakan.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="card shadow-sm h-100 product-card"
+              data-id="jantung_man"
+            >
+              <div class="position-relative">
+                <img
+                  src="foto/jantung.jpg"
+                  class="card-img-top"
+                  alt="Jantung"
+                />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                  >RARE</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jantung Manusia</h5>
+                <p class="card-text text-muted">Rp2.000.000.000</p>
+                <div class="mb-2">
+                  <span class="badge bg-dark me-1">Organ</span>
+                  <span class="badge bg-warning text-dark">Medical Grade</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  Jantung Manusia yang siap di pakai entah itu untuk
+                  trasplantasi, tumbal, makanan, atau apapun itu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100 product-card" data-id="ginjal_man">
+              <div class="position-relative">
+                <img src="foto/ginjal.jpg" class="card-img-top" alt="Ginjal" />
+                <span class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                  >RARE</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ginjal Manusia</h5>
+                <p class="card-text text-muted">Rp3.000.000.000</p>
+                <div class="mb-2">
+                  <span class="badge bg-dark me-1">Organ</span>
+                  <span class="badge bg-warning text-dark">Medical Grade</span>
+                </div>
+                <button class="btn btn-danger toggle-btn">
+                  Deskripsi singkat
+                </button>
+                <p class="detail d-none mt-3">
+                  Ginjal Manusia yang siap di pakai entah itu untuk
+                  trasplantasi, tumbal, makanan, atau apapun itu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer-section text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="foto/logo_pochi.png"
+                alt="Logo"
+                style="height: 50px; width: auto; margin-right: 15px"
+              />
+              <h5 class="mb-0 fw-bold">PSDH Store</h5>
+            </div>
+            <p class="mb-3">
+              Toko resmi Public Safety Devil Hunters. Menyediakan peralatan,
+              senjata, dan layanan kontrak iblis untuk para pemburu profesional.
+            </p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/so_b_run_?igsh=bG12M3FtcnNlMTgy" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@SabunGrg" title="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://discord.com/users/715840202068721694" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Menu Utama</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="home.html">Beranda</a></li>
+              <li class="mb-2"><a href="produk.html">Produk & Jasa</a></li>
+              <li class="mb-2"><a href="kontak.html">Kontak</a></li>
+              <li class="mb-2">
+                <a href="hunter-registration.html">Daftar Hunter</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Product Categories -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kategori</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#weapons">Senjata</a></li>
+              <li class="mb-2"><a href="#devils">Kontrak Iblis</a></li>
+              <li class="mb-2"><a href="#organs">Organ Manusia</a></li>
+              <li class="mb-2"><a href="#equipment">Perlengkapan</a></li>
+            </ul>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Layanan</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#faq">FAQ</a></li>
+              <li class="mb-2"><a href="#support">Bantuan</a></li>
+              <li class="mb-2"><a href="#shipping">Pengiriman</a></li>
+              <li class="mb-2"><a href="#returns">Pengembalian</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kontak</h6>
+            <div class="footer-links">
+              <p class="mb-2">
+                <i class="fas fa-phone me-2"></i> +62 877-2024-0775
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <a
+                  href="#"
+                  class="__cf_email__"
+                  data-cfemail="cba2a5ada48bbbb8afa3e5aca4bde5a2af"
+                  >[@obunsabun]</a
+                >
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Surabaya, Eropa 🐈
+              </p>
+              <p class="mb-0">
+                <i class="fas fa-clock me-2"></i> 24/7 Emergency
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="blood-divider" />
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">
+              © 2025 PSDH RI | Iblis akan terus lahir dan lahir
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+              <span class="hunter-badge">🔥 Devil Hunter Certified</span>
+              <span class="hunter-badge">⚔️ Official Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Category switching functionality
+      function showCategory(category) {
+        // Hide all sections
+        document.querySelectorAll(".category-section").forEach((section) => {
+          section.style.display = "none";
+        });
+
+        // Show selected section
+        document.getElementById(category + "-section").style.display = "block";
+
+        // Update button states
+        document.querySelectorAll(".btn-group .btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        event.target.classList.add("active");
+      }
+
+      // Additional badge colors
+      const style = document.createElement("style");
+      style.textContent = `
+      .bg-orange { background-color: #ff8c00 !important; }
+      .bg-purple { background-color: #8a2be2 !important; }
+    `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>

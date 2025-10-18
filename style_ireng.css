@@ -1,0 +1,363 @@
+/*uji_3*/
+/*terang mode*/
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --header-bg: #ffffff;
+  --footer-bg: #dc3545;
+  --border-color: #dee2e6;
+  --accent-color: #dc3545;
+  --link-color: #dc3545;
+  --link-hover: #ff5c77;
+}
+
+/*ireng mode overide*/
+body.theme-dark {
+  --bg-color: #121212;
+  --text-color: #e9ecef;
+  --card-bg: #1e1e1e;
+  --header-bg: #1e1e1e;
+  --footer-bg: #dc3545;
+  --border-color: #2c2c2c;
+  --accent-color: #dc3545;
+  --link-color: #ff5c77;
+  --link-hover: #dc3545;
+  background-color: #000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.custom-header {
+  background-color: var(--header-bg) !important;
+  border-bottom: 2px solid var(--accent-color);
+}
+.custom-footer {
+  background-color: var(--footer-bg) !important;
+  color: var(--text-color);
+}
+
+.custom-header a,
+nav a,
+.nav-link {
+  color: var(--text-color) !important;
+}
+nav a:hover,
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+section.bg-danger {
+  background-color: var(--accent-color) !important;
+  color: #fff;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+.card-body {
+  background-color: var(--card-bg);
+}
+
+/*tmbl*/
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+.btn-light {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+.btn-outline-secondary {
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--border-color);
+  color: var(--bg-color);
+}
+
+/*inpt*/
+input,
+textarea {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+input:focus,
+textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+/*brder pmisah*/
+.border-end {
+  border-right: 2px solid var(--border-color) !important;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/*link umum */
+a {
+  color: var(--link-color);
+}
+a:hover {
+  color: var(--link-hover);
+}
+
+/*nav aktif */
+.nav-link.active {
+  background-color: var(--accent-color) !important;
+  color: #fff !important;
+}
+
+/*scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--header-bg);
+}
+
+.text-muted {
+  color: var(--text-color) !important;
+  opacity: 0.7;
+}
+
+.nav-tabs .nav-link {
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+  border: none;
+}
+
+.nav-tabs .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--accent-color) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 6px 6px 0 0;
+}
+
+/* === FIX UNTUK DETAIL.HTML LIGHT MODE === */
+/* Hapus semua background overlay yang menyebabkan putih-putih */
+main,
+.container,
+.row,
+.col,
+section,
+article {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Pastikan gambar tidak terpengaruh filter */
+img {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Fix khusus untuk light mode - hapus background putih yang mengganggu */
+body:not(.theme-dark) main,
+body:not(.theme-dark) .container,
+body:not(.theme-dark) section,
+body:not(.theme-dark) .row,
+body:not(.theme-dark) .col {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Fix untuk dark mode */
+body.theme-dark main,
+body.theme-dark .container,
+body.theme-dark section,
+body.theme-dark .row,
+body.theme-dark .col {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Hapus shadow yang menyebabkan efek putih */
+body.theme-dark .shadow,
+body.theme-dark .shadow-sm {
+  box-shadow: none !important;
+}
+
+/* Gallery card fix */
+.gallery-card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+body.theme-dark .gallery-card {
+  background-color: #1a1a1a !important;
+}
+
+body:not(.theme-dark) .gallery-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Pastikan tidak ada overlay putih di light mode */
+body:not(.theme-dark)::before,
+body:not(.theme-dark) *::before,
+body:not(.theme-dark) *::after {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+}
+
+/* Footer enhancement styles */
+.footer-section {
+  border-top: 3px solid #000;
+  background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%);
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffcccb;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: #dc3545;
+  transform: translateY(-2px);
+}
+
+.devil-badge {
+  background: linear-gradient(45deg, #ff0000, #8b0000);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Hunter registration form styles */
+.hunter-form {
+  background: linear-gradient(
+    135deg,
+    rgba(220, 53, 69, 0.1),
+    rgba(0, 0, 0, 0.05)
+  );
+  border: 2px solid var(--accent-color);
+  border-radius: 15px;
+}
+
+.hunter-form h3 {
+  color: var(--accent-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-input:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-hunter {
+  background: linear-gradient(45deg, #dc3545, #b02a37);
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-hunter:hover {
+  background: linear-gradient(45deg, #b02a37, #8b1e2b);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+}
+
+/* Devil theme enhancements */
+.devil-accent {
+  color: var(--accent-color) !important;
+  font-weight: bold;
+}
+
+.blood-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #dc3545, transparent);
+  border: none;
+  margin: 2rem 0;
+}
+
+.hunter-badge {
+  background: linear-gradient(45deg, #dc3545, #000);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* benerin nagian 'Selamat Datang di PSDH' */
+body:not(.theme-dark) section.bg-danger {
+  /* background-color: #dc3545 !important; */
+  color: #000 !important; /* teks jadi hitam di light mode */
+}
+
+body.theme-dark section.bg-danger {
+  /* background-color: #dc3545 !important; */
+  color: #fff !important; /* tetap putih di dark mode */
+}
+
+/* Footer biar teks selalu terbaca */
+.footer-section {
+  color: #fff !important;
+}
+
+body:not(.theme-dark) .footer-section {
+  background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%) !important;
+  color: #fff !important; /* teks footer tetap putih di light mode */
+}
+
+.footer-section a,
+.footer-section p,
+.footer-section h5,
+.footer-section h6 {
+  color: #fff !important;
+}
+
+.footer-section a:hover {
+  color: #ffcccb !important;
+}

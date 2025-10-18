@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Hunter | PSDH</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style_efas.css" />
+    <link rel="stylesheet" href="style_ireng.css" />
+  </head>
+  <body>
+    <header
+      class="custom-header d-flex justify-content-between align-items-center px-4 py-3"
+    >
+      <img src="foto/logo_pochi.png" alt="Logo" />
+      <h1 class="fw-bold text-danger">Hunter Registration</h1>
+      <nav>
+        <a href="home.html" class="mx-2 text-decoration-none text-white"
+          >Home</a
+        >
+        <a href="produk.html" class="mx-2 text-decoration-none text-white"
+          >Produk</a
+        >
+        <a href="kontak.html" class="mx-2 text-decoration-none text-white"
+          >Kontak</a
+        >
+        <a
+          href="hunter-registration.html"
+          class="mx-2 text-decoration-none fw-semibold text-dark"
+          >Daftar Hunter</a
+        >
+        <button id="themeToggle" class="btn btn-sm btn-outline-danger ms-3">
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <div class="container py-5">
+      <!-- warning banner -->
+      <div
+        class="alert alert-danger border-0 mb-5"
+        style="background: linear-gradient(45deg, #dc3545, #8b0000)"
+      >
+        <div class="d-flex align-items-center">
+          <i class="fas fa-skull-crossbones fa-2x me-3"></i>
+          <div>
+            <h5 class="alert-heading mb-1 text-white">
+              ⚠️ PERINGATAN KERAS ⚠️
+            </h5>
+            <p class="mb-0 text-white">
+              Menjadi Devil Hunter adalah pekerjaan dengan risiko kematian
+              tinggi. Tingkat kematian mencapai 90%. Pastikan Anda siap secara
+              mental dan fisik.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="hunter-form p-5 shadow-lg">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold devil-accent">
+                <i class="fas fa-sword me-2"></i>
+                FORMULIR PENDAFTARAN DEVIL HUNTER
+                <i class="fas fa-sword ms-2"></i>
+              </h2>
+              <p class="text-muted">
+                Bergabunglah dengan Public Safety Devil Hunters Division
+              </p>
+            </div>
+
+            <form id="hunterRegistrationForm">
+              <!-- info pirbadi wak -->
+              <div class="row mb-4">
+                <div class="col-12">
+                  <h5 class="devil-accent border-bottom pb-2 mb-3">
+                    <i class="fas fa-user me-2"></i>Informasi Personal
+                  </h5>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="fullName" class="form-label fw-semibold"
+                    >Nama Lengkap *</label
+                  >
+                  <input
+                    type="text"
+                    id="fullName"
+                    class="form-control"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="nickname" class="form-label fw-semibold"
+                    >Nama Panggilan</label
+                  >
+                  <input
+                    type="text"
+                    id="nickname"
+                    class="form-control"
+                    placeholder="Nama panggilan (opsional)"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="birthDate" class="form-label fw-semibold"
+                    >Tanggal Lahir *</label
+                  >
+                  <input
+                    type="date"
+                    id="birthDate"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="gender" class="form-label fw-semibold"
+                    >Jenis Kelamin *</label
+                  >
+                  <select id="gender" class="form-select" required>
+                    <option value="">Pilih jenis kelamin</option>
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- kontak pak -->
+              <div class="row mb-4">
+                <div class="col-12">
+                  <h5 class="devil-accent border-bottom pb-2 mb-3">
+                    <i class="fas fa-address-book me-2"></i>Informasi Kontak
+                  </h5>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label fw-semibold"
+                    >Email *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label fw-semibold"
+                    >Nomor Telepon *</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form-control"
+                    placeholder="+62 xxx-xxxx-xxxx"
+                    required
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="address" class="form-label fw-semibold"
+                    >Alamat Lengkap *</label
+                  >
+                  <textarea
+                    id="address"
+                    rows="3"
+                    class="form-control"
+                    placeholder="Masukkan alamat lengkap"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- spesialisasi -->
+              <div class="row mb-4">
+                <div class="col-12">
+                  <h5 class="devil-accent border-bottom pb-2 mb-3">
+                    <i class="fas fa-crosshairs me-2"></i>Spesialisasi Hunter
+                  </h5>
+                </div>
+                <div class="col-12 mb-3">
+                  <label class="form-label fw-semibold"
+                    >Tipe Hunter yang Diminati *</label
+                  >
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="hunterType"
+                          id="humanHunter"
+                          value="human"
+                          required
+                        />
+                        <label class="form-check-label" for="humanHunter">
+                          <strong>Human Hunter</strong><br />
+                          <small class="text-muted"
+                            >Pemburu manusia biasa dengan pelatihan
+                            khusus</small
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="hunterType"
+                          id="contractHunter"
+                          value="contract"
+                          required
+                        />
+                        <label class="form-check-label" for="contractHunter">
+                          <strong>Contract Hunter</strong><br />
+                          <small class="text-muted"
+                            >Manusia yang berkontrak dengan iblis</small
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="hunterType"
+                          id="fiendHunter"
+                          value="fiend"
+                          required
+                        />
+                        <label class="form-check-label" for="fiendHunter">
+                          <strong>Fiend</strong><br />
+                          <small class="text-muted"
+                            >Iblis yang menguasai mayat manusia</small
+                          >
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="experience" class="form-label fw-semibold"
+                    >Pengalaman Tempur</label
+                  >
+                  <select id="experience" class="form-select">
+                    <option value="">Pilih level pengalaman</option>
+                    <option value="none">Tidak ada pengalaman</option>
+                    <option value="basic">Pelatihan dasar (< 1 tahun)</option>
+                    <option value="intermediate">Menengah (1-3 tahun)</option>
+                    <option value="advanced">Lanjutan (3-5 tahun)</option>
+                    <option value="expert">Ahli (> 5 tahun)</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="weapons" class="form-label fw-semibold"
+                    >Keahlian Senjata</label
+                  >
+                  <div class="row">
+                    <div class="col-md-3 mb-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="sword"
+                          name="weapons"
+                          value="sword"
+                        />
+                        <label class="form-check-label" for="sword"
+                          >Pedang</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="gun"
+                          name="weapons"
+                          value="gun"
+                        />
+                        <label class="form-check-label" for="gun"
+                          >Senjata Api</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="martial"
+                          name="weapons"
+                          value="martial"
+                        />
+                        <label class="form-check-label" for="martial"
+                          >Bela Diri</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="other"
+                          name="weapons"
+                          value="other"
+                        />
+                        <label class="form-check-label" for="other"
+                          >Lainnya</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--devil kontrak info -->
+              <div class="row mb-4" id="contractSection" style="display: none">
+                <div class="col-12">
+                  <h5 class="devil-accent border-bottom pb-2 mb-3">
+                    <i class="fas fa-fire me-2"></i>Informasi Kontrak Iblis
+                  </h5>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="devilName" class="form-label fw-semibold"
+                    >Nama Iblis yang Dikontrak</label
+                  >
+                  <input
+                    type="text"
+                    id="devilName"
+                    class="form-control"
+                    placeholder="Contoh: Fox Devil, Future Devil, dll."
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="contractPrice" class="form-label fw-semibold"
+                    >Harga Kontrak</label
+                  >
+                  <textarea
+                    id="contractPrice"
+                    rows="2"
+                    class="form-control"
+                    placeholder="Jelaskan harga yang dibayarkan untuk kontrak (contoh: sebagian kulit, mata kanan, dll.)"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- motipasi -->
+              <div class="row mb-4">
+                <div class="col-12">
+                  <h5 class="devil-accent border-bottom pb-2 mb-3">
+                    <i class="fas fa-heart me-2"></i>Motivasi
+                  </h5>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="motivation" class="form-label fw-semibold"
+                    >Mengapa ingin menjadi Devil Hunter? *</label
+                  >
+                  <textarea
+                    id="motivation"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Ceritakan motivasi Anda untuk bergabung dengan PSDH..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- s&k -->
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="terms"
+                      required
+                    />
+                    <label class="form-check-label" for="terms">
+                      Saya memahami risiko kematian yang tinggi dalam pekerjaan
+                      ini dan bersedia menanggung segala konsekuensi *
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="privacy"
+                      required
+                    />
+                    <label class="form-check-label" for="privacy">
+                      Saya setuju dengan kebijakan privasi dan penggunaan data
+                      personal *
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emergency"
+                    />
+                    <label class="form-check-label" for="emergency">
+                      Saya bersedia dipanggil dalam situasi darurat 24/7
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- submit -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-hunter btn-lg px-5 py-3">
+                  <i class="fas fa-paper-plane me-2"></i>
+                  KIRIM PENDAFTARAN
+                </button>
+                <p class="mt-3 text-muted small">
+                  <i class="fas fa-info-circle me-1"></i>
+                  Proses seleksi akan memakan waktu 7-14 hari kerja. Kami akan
+                  menghubungi Anda untuk tahap selanjutnya.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- skiikkil -->
+    <footer class="footer-section text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- pt -->
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="foto/logo_pochi.png"
+                alt="Logo"
+                style="height: 50px; width: auto; margin-right: 15px"
+              />
+              <h5 class="mb-0 fw-bold">PSDH Store</h5>
+            </div>
+            <p class="mb-3">
+              Toko resmi Public Safety Devil Hunters. Menyediakan peralatan,
+              senjata, dan layanan kontrak iblis untuk para pemburu profesional.
+            </p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/so_b_run_?igsh=bG12M3FtcnNlMTgy" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@SabunGrg" title="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://discord.com/users/715840202068721694" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+
+          <!-- links -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Menu Utama</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="home.html">Beranda</a></li>
+              <li class="mb-2"><a href="produk.html">Produk & Jasa</a></li>
+              <li class="mb-2"><a href="kontak.html">Kontak</a></li>
+              <li class="mb-2">
+                <a href="hunter-registration.html">Daftar Hunter</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- produk -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kategori</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#weapons">Senjata</a></li>
+              <li class="mb-2"><a href="#devils">Kontrak Iblis</a></li>
+              <li class="mb-2"><a href="#organs">Organ Manusia</a></li>
+              <li class="mb-2"><a href="#equipment">Perlengkapan</a></li>
+            </ul>
+          </div>
+
+          <!-- cs -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Layanan</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#faq">FAQ</a></li>
+              <li class="mb-2"><a href="#support">Bantuan</a></li>
+              <li class="mb-2"><a href="#shipping">Pengiriman</a></li>
+              <li class="mb-2"><a href="#returns">Pengembalian</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kontak</h6>
+            <div class="footer-links">
+              <p class="mb-2">
+                <i class="fas fa-phone me-2"></i> +62 877-2024-0775
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <a
+                  href="#"
+                  class="__cf_email__"
+                  data-cfemail="cba2a5ada48bbbb8afa3e5aca4bde5a2af"
+                  >[@obunsabun]</a
+                >
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Surabaya, Eropa 🐈
+              </p>
+              <p class="mb-0">
+                <i class="fas fa-clock me-2"></i> 24/7 Emergency
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="blood-divider" />
+
+        <!-- sikil -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">
+              © 2025 PSDH RI | Iblis akan terus lahir dan lahir
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+              <span class="hunter-badge">🔥 Devil Hunter Certified</span>
+              <span class="hunter-badge">⚔️ Official Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // nampil/tidak kontrak
+      document.querySelectorAll('input[name="hunterType"]').forEach((radio) => {
+        radio.addEventListener("change", function () {
+          const contractSection = document.getElementById("contractSection");
+          if (this.value === "contract" || this.value === "fiend") {
+            contractSection.style.display = "block";
+          } else {
+            contractSection.style.display = "none";
+          }
+        });
+      });
+
+      // Hunter registration
+      document
+        .getElementById("hunterRegistrationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(this);
+          const data = {};
+
+          // kumpulin form data
+          for (let [key, value] of formData.entries()) {
+            data[key] = value;
+          }
+
+          // kmpln weapon
+          const weapons = [];
+          document
+            .querySelectorAll('input[name="weapons"]:checked')
+            .forEach((checkbox) => {
+              weapons.push(checkbox.value);
+            });
+          data.weapons = weapons;
+
+          // pesan sukses
+          alert(
+            `Terima kasih ${
+              document.getElementById("fullName").value
+            }! Pendaftaran Hunter Anda telah diterima. Tim rekrutmen PSDH akan menghubungi Anda dalam 7-14 hari kerja untuk proses seleksi selanjutnya. Bersiaplah untuk tes fisik dan mental yang ketat!`
+          );
+
+          // Reset 
+          this.reset();
+          document.getElementById("contractSection").style.display = "none";
+        });
+    </script>
+  </body>
+</html>

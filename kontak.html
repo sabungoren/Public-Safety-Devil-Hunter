@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | PSDH</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style_efas.css" />
+    <link rel="stylesheet" href="style_ireng.css" />
+  </head>
+  <body>
+    <header
+      class="custom-header d-flex justify-content-between align-items-center px-4 py-3"
+    >
+      <img src="foto/logo_pochi.png" alt="Logo" />
+      <h1 class="fw-bold text-danger">Public Safety Devil Hunter</h1>
+      <nav>
+        <a href="home.html" class="mx-2 text-decoration-none text-white"
+          >Home</a
+        >
+        <a href="produk.html" class="mx-2 text-decoration-none text-white"
+          >Produk</a
+        >
+        <a
+          href="kontak.html"
+          class="mx-2 text-decoration-none fw-semibold text-dark"
+          >Kontak</a
+        >
+        <a
+          href="hunter-registration.html"
+          class="mx-2 text-decoration-none text-white"
+          >Daftar Hunter</a
+        >
+        <button id="themeToggle" class="btn btn-sm btn-outline-danger ms-3">
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-center fw-bold mb-5 devil-accent">
+            <i class="fas fa-envelope me-2"></i>Hubungi Kami
+          </h2>
+
+          <!-- Contact Info Cards -->
+          <div class="row g-4 mb-5">
+            <div class="col-md-4">
+              <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fas fa-phone fa-2x text-danger mb-3"></i>
+                  <h5 class="card-title">Telepon</h5>
+                  <p class="card-text">+62 877-2024-0775</p>
+                  <small class="text-muted">24/7 Emergency Line</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fas fa-envelope fa-2x text-danger mb-3"></i>
+                  <h5 class="card-title">Email</h5>
+                  <p class="card-text">
+                    <a
+                      href="/cdn-cgi/l/email-protection"
+                      class="__cf_email__"
+                      data-cfemail="7c15121a133c0c0f1814521b130a521518"
+                      >[email&#160;protected]</a
+                    >
+                  </p>
+                  <small class="text-muted">Response within 24 hours</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fas fa-map-marker-alt fa-2x text-danger mb-3"></i>
+                  <h5 class="card-title">Alamat</h5>
+                  <p class="card-text">Surabaya, Eropa</p>
+                  <small class="text-muted">PSDH Headquarters</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="card shadow-lg">
+            <div class="card-header bg-danger text-white">
+              <h4 class="mb-0">
+                <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+              </h4>
+            </div>
+            <div class="card-body p-4">
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="nama" class="form-label fw-semibold"
+                      >Nama Lengkap *</label
+                    >
+                    <input
+                      type="text"
+                      id="nama"
+                      class="form-control"
+                      placeholder="Masukkan nama lengkap"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label fw-semibold"
+                      >Email *</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="example@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="nomortelp" class="form-label fw-semibold"
+                      >Nomor HP</label
+                    >
+                    <input
+                      type="tel"
+                      id="nomortelp"
+                      class="form-control"
+                      placeholder="+62 xxx-xxxx-xxxx"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="subject" class="form-label fw-semibold"
+                      >Subjek</label
+                    >
+                    <select id="subject" class="form-select">
+                      <option value="">Pilih subjek</option>
+                      <option value="product">Pertanyaan Produk</option>
+                      <option value="order">Status Pesanan</option>
+                      <option value="complaint">Keluhan</option>
+                      <option value="partnership">Kerjasama</option>
+                      <option value="other">Lainnya</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="pesan" class="form-label fw-semibold"
+                    >Pesan *</label
+                  >
+                  <textarea
+                    id="pesan"
+                    rows="5"
+                    class="form-control"
+                    placeholder="Tulis keperluan atau pesan Anda..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="newsletter"
+                    />
+                    <label class="form-check-label" for="newsletter">
+                      Saya ingin menerima newsletter dan update terbaru dari
+                      PSDH
+                    </label>
+                  </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button
+                    type="reset"
+                    class="btn btn-outline-secondary me-md-2"
+                  >
+                    Reset
+                  </button>
+                  <button type="submit" class="btn btn-danger btn-lg px-4">
+                    <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="row g-3 mt-4">
+            <div class="col-md-6">
+              <a
+                href="hunter-registration.html"
+                class="btn btn-outline-danger w-100 py-3"
+              >
+                <i class="fas fa-user-plus fa-lg me-2"></i>
+                <div>
+                  <strong>Daftar Menjadi Hunter</strong><br />
+                  <small>Bergabung dengan tim PSDH</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a
+                href="https://wa.me/6287720240775"
+                target="_blank"
+                class="btn btn-success w-100 py-3"
+              >
+                <i class="fab fa-whatsapp fa-lg me-2"></i>
+                <div>
+                  <strong>Chat WhatsApp</strong><br />
+                  <small>Respon cepat 24/7</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer-section text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="foto/logo_pochi.png"
+                alt="Logo"
+                style="height: 50px; width: auto; margin-right: 15px"
+              />
+              <h5 class="mb-0 fw-bold">PSDH Store</h5>
+            </div>
+            <p class="mb-3">
+              Toko resmi Public Safety Devil Hunters. Menyediakan peralatan,
+              senjata, dan layanan kontrak iblis untuk para pemburu profesional.
+            </p>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/so_b_run_?igsh=bG12M3FtcnNlMTgy" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@SabunGrg" title="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://discord.com/users/715840202068721694" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Menu Utama</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="home.html">Beranda</a></li>
+              <li class="mb-2"><a href="produk.html">Produk & Jasa</a></li>
+              <li class="mb-2"><a href="kontak.html">Kontak</a></li>
+              <li class="mb-2">
+                <a href="hunter-registration.html">Daftar Hunter</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Product Categories -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kategori</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#weapons">Senjata</a></li>
+              <li class="mb-2"><a href="#devils">Kontrak Iblis</a></li>
+              <li class="mb-2"><a href="#organs">Organ Manusia</a></li>
+              <li class="mb-2"><a href="#equipment">Perlengkapan</a></li>
+            </ul>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Layanan</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#faq">FAQ</a></li>
+              <li class="mb-2"><a href="#support">Bantuan</a></li>
+              <li class="mb-2"><a href="#shipping">Pengiriman</a></li>
+              <li class="mb-2"><a href="#returns">Pengembalian</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Kontak</h6>
+            <div class="footer-links">
+              <p class="mb-2">
+                <i class="fas fa-phone me-2"></i> +62 877-2024-0775
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <a
+                  href="#"
+                  class="__cf_email__"
+                  data-cfemail="cba2a5ada48bbbb8afa3e5aca4bde5a2af"
+                  >[@obunsabun]</a
+                >
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Surabaya, Eropa 🐈
+              </p>
+              <p class="mb-0">
+                <i class="fas fa-clock me-2"></i> 24/7 Emergency
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="blood-divider" />
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">
+              © 2025 PSDH RI | Iblis akan terus lahir dan lahir
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-flex justify-content-md-end gap-3 mt-2 mt-md-0">
+              <span class="hunter-badge">🔥 Devil Hunter Certified</span>
+              <span class="hunter-badge">⚔️ Official Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
