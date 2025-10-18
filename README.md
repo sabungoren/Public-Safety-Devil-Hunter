@@ -13,9 +13,15 @@ Dengan footer
 ![Homepage](aset_imeg/footer.png)  
 **2. Produk**  
 Ada 3 kategori yang bisa diakses para Hunter untuk menemukan apa yang mereka butuhkan  
-- Senjata & Peralatan : berisi senjata dan peralatan yang bisa dibeli oleh Hunter untuk keperluan memburu Iblis   
-- Kontrak Iblis : Iblis-iblis yang bisa dihubungi oleh para Hunter untuk melakukan kontrak yang nantinya bisa memberikan keuntungan tersendiri (tentu tidak gratis)  
+- Senjata & Peralatan : berisi senjata dan peralatan yang bisa dibeli oleh Hunter untuk keperluan memburu Iblis
+![Homepage](aset_imeg/produk_1.png)
+![Homepage](aset_imeg/produk_2.png)  
+- Kontrak Iblis : Iblis-iblis yang bisa dihubungi oleh para Hunter untuk melakukan kontrak yang nantinya bisa memberikan keuntungan tersendiri (tentu tidak gratis)
+![Homepage](aset_imeg/produk_3.png)
+![Homepage](aset_imeg/produk_4.png)  
 - Organ : Organ yang bisa dibeli oleh para hunter secara bebas
+![Homepage](aset_imeg/produk_5.png)
+![Homepage](aset_imeg/produk_6.png)  
   
 Tiap produk yang ada di laman produk memiliki 2 fitur nantinya, yaitu deskripsi singkat dan detail produk.  
 - deskripsi singkat : bisa diakses dengan cara memencet tombol 'deskripsi singkat' yang ada dibawah produk
