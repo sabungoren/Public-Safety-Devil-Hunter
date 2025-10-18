@@ -1,4 +1,4 @@
-**Public Safety Devil Hunter**.  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b7d484f1-f123-4a69-b781-0257c079614d" />**Public Safety Devil Hunter**.  
 Sebuah web yang di dirikan oleh Biro PSDH untuk para Hunter sebagai wadah informasi dan transaksi antar Hunter.  
 
 Ada **3 laman utama** dalam web ini  
@@ -25,7 +25,10 @@ Ada 3 kategori yang bisa diakses para Hunter untuk menemukan apa yang mereka but
   
 Tiap produk yang ada di laman produk memiliki 2 fitur nantinya, yaitu deskripsi singkat dan detail produk.  
 - deskripsi singkat : bisa diakses dengan cara memencet tombol 'deskripsi singkat' yang ada dibawah produk
-- detail produk : berisi deskripsi produk secara detail dan dokumentasinya, serta pemesanannya  
+- detail produk : berisi deskripsi produk secara detail dan dokumentasinya, serta pemesanannya
+![Homepage](aset_imeg/detail_1.png)
+![Homepage](aset_imeg/detail_2.png)
+
 **3. Kontak**
 Ada 2 kontak yang bisa diakses para Hunter
 - Hubungi kami (Costumer Service)
