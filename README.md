@@ -6,6 +6,11 @@ Home, Produk, Kontak
 **1. Home**  
 Laman awal ketika Hunter memasuki web.  
 Berisi informasi-informasi terbaru dan menarik, serta pengumuman penting bagi para Hunter.  
+![Homepage](aset_imeg/home_1.jpg).  
+![Homepage](aset_imeg/home_2.jpg).  
+![Homepage](aset_imeg/home_3.jpg).  
+Dengan footer  
+![Homepage](aset_imeg/footer.jpg).  
 **2. Produk**  
 Ada 3 kategori yang bisa diakses para Hunter untuk menemukan apa yang mereka butuhkan  
 - Senjata & Peralatan : berisi senjata dan peralatan yang bisa dibeli oleh Hunter untuk keperluan memburu Iblis   
@@ -18,6 +23,6 @@ Tiap produk yang ada di laman produk memiliki 2 fitur nantinya, yaitu deskripsi 
 **3. Kontak**
 Ada 2 kontak yang bisa diakses para Hunter
 - Hubungi kami (Costumer Service)
-- Daftar Hunter : Kontak yang bisa dihubungi oleh para Non Hunter apabila mereka ingin mendaftar menjadi Hunter
+- Daftar Hunter : Kontak yang bisa dihubungi oleh para Non Hunter apabila mereka ingin mendaftar menjadi Hunter   
 Halaman Homepage:  
 ![Homepage](aset_imeg/ase.jpg).
