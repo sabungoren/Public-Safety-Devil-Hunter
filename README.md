@@ -27,11 +27,17 @@ Tiap produk yang ada di laman produk memiliki 2 fitur nantinya, yaitu deskripsi 
 - deskripsi singkat : bisa diakses dengan cara memencet tombol 'deskripsi singkat' yang ada dibawah produk
 - detail produk : berisi deskripsi produk secara detail dan dokumentasinya, serta pemesanannya
 ![Homepage](aset_imeg/detail_1.png)
-![Homepage](aset_imeg/detail_2.png)
+![Homepage](aset_imeg/detail_2.png)  
 
 **3. Kontak**
 Ada 2 kontak yang bisa diakses para Hunter
 - Hubungi kami (Costumer Service)
-- Daftar Hunter : Kontak yang bisa dihubungi oleh para Non Hunter apabila mereka ingin mendaftar menjadi Hunter   
+![Homepage](aset_imeg/cs_1.png)  
+![Homepage](aset_imeg/cs_2.png)  
+- Daftar Hunter : Kontak yang bisa dihubungi oleh para Non Hunter apabila mereka ingin mendaftar menjadi Hunter
+![Homepage](aset_imeg/daftar_1.png)
+![Homepage](aset_imeg/daftar_2.png)
+![Homepage](aset_imeg/daftar_3.png)
+  
 Halaman Homepage:  
 ![Homepage](aset_imeg/ase.jpg).
