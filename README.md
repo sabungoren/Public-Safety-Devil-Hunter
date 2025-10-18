@@ -1,5 +1,5 @@
-Penjelasan kode
+Penjelasan kode.
 link yt: 
-guguguuguguuu
+guguguuguguuu.
 Halaman Homepage:
 ![Homepage](aset_imeg/ase.jpg).
