@@ -39,5 +39,5 @@ Ada 2 kontak yang bisa diakses para Hunter
 ![Homepage](aset_imeg/daftar_2.png)
 ![Homepage](aset_imeg/daftar_3.png)
   
-Halaman Homepage:  
-![Homepage](aset_imeg/ase.jpg).
+**Fitur Tambahan**  
+Dark mode vs Light mode. Memiliki 2 mode berbeda yang bisa diatur hunter sesuak hati. berada di pojok kanan atas dengan logo bulan/matahari
