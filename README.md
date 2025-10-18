@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b7d484f1-f123-4a69-b781-0257c079614d" />**Public Safety Devil Hunter**.  
+**Public Safety Devil Hunter**.  
 Sebuah web yang di dirikan oleh Biro PSDH untuk para Hunter sebagai wadah informasi dan transaksi antar Hunter.  
 
 Ada **3 laman utama** dalam web ini  
